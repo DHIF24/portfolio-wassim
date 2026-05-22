@@ -1,0 +1,623 @@
+/* ============================================
+   RESPONSIVE.CSS
+   Media queries for mobile/tablet
+   ============================================ */
+
+/* ============================================
+   TABLET BREAKPOINT (768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Typography adjustments */
+    :root {
+        --font-size-5xl: 2.5rem;
+        --font-size-4xl: 2rem;
+        --font-size-3xl: 1.75rem;
+        --font-size-2xl: 1.5rem;
+        --font-size-xl: 1.125rem;
+    }
+
+    /* Container padding */
+    .container {
+        padding: 0 var(--space-md);
+    }
+
+    /* Section spacing */
+    .section {
+        padding: var(--space-3xl) 0;
+    }
+
+    /* Navbar */
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background: var(--bg-secondary);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-xl);
+        transition: right var(--transition-normal);
+        border-left: 1px solid var(--border-color);
+    }
+
+    .navbar-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Hero section */
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    .hero-tagline {
+        font-size: var(--font-size-base);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* About section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .image-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    /* Skills section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    /* Experience section */
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        padding-left: var(--space-2xl);
+    }
+
+    .timeline-marker {
+        left: -5px;
+    }
+
+    /* Projects section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    /* Education section */
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-icon {
+        margin: 0 auto var(--space-md);
+    }
+
+    /* Contact section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: var(--space-lg);
+    }
+
+    /* Footer */
+    .footer .container {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+}
+
+/* ============================================
+   MOBILE BREAKPOINT (480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+    /* Typography adjustments */
+    :root {
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --font-size-3xl: 1.5rem;
+        --font-size-2xl: 1.25rem;
+        --font-size-xl: 1rem;
+    }
+
+    /* Container padding */
+    .container {
+        padding: 0 var(--space-sm);
+    }
+
+    /* Section spacing */
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+
+    .section-title {
+        font-size: var(--font-size-3xl);
+        margin-bottom: var(--space-xl);
+    }
+
+    /* Navbar */
+    .navbar-container {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .navbar-logo {
+        font-size: var(--font-size-lg);
+    }
+
+    .navbar-menu {
+        width: 80%;
+    }
+
+    /* Hero section */
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero-content {
+        padding: 0 var(--space-sm);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .hero-tagline {
+        font-size: var(--font-size-sm);
+    }
+
+    .hero-buttons {
+        gap: var(--space-sm);
+    }
+
+    .btn {
+        padding: var(--space-sm) var(--space-lg);
+        font-size: var(--font-size-xs);
+    }
+
+    /* About section */
+    .about-bio {
+        font-size: var(--font-size-sm);
+    }
+
+    .about-details {
+        gap: var(--space-sm);
+    }
+
+    .detail-item {
+        font-size: var(--font-size-sm);
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .stat-number {
+        font-size: var(--font-size-2xl);
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    /* Skills section */
+    .skill-category {
+        padding: var(--space-lg);
+    }
+
+    .category-header h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    .skill-tag {
+        font-size: 0.7rem;
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    /* Experience section */
+    .timeline-item {
+        padding-left: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+
+    .timeline-content {
+        padding: var(--space-lg);
+    }
+
+    .timeline-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .timeline-description li {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Projects section */
+    .project-card {
+        padding: var(--space-lg);
+    }
+
+    .project-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .project-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .project-description {
+        font-size: var(--font-size-sm);
+    }
+
+    .project-tag {
+        font-size: 0.7rem;
+    }
+
+    /* Education section */
+    .education-card {
+        padding: var(--space-lg);
+    }
+
+    .education-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .education-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .education-degree {
+        font-size: var(--font-size-base);
+    }
+
+    .education-institution {
+        font-size: var(--font-size-sm);
+    }
+
+    .education-date {
+        font-size: var(--font-size-xs);
+    }
+
+    /* Contact section */
+    .contact-info,
+    .contact-form {
+        padding: var(--space-md);
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: var(--font-size-xl);
+    }
+
+    .contact-item {
+        font-size: var(--font-size-sm);
+    }
+
+    .contact-item svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .social-links a {
+        width: 36px;
+        height: 36px;
+    }
+
+    .form-group label {
+        font-size: var(--font-size-xs);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: var(--space-sm);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--space-lg) 0;
+    }
+
+    .footer p {
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* ============================================
+   LARGE DESKTOP BREAKPOINT (1440px)
+   ============================================ */
+
+@media (min-width: 1440px) {
+    /* Typography adjustments */
+    :root {
+        --font-size-5xl: 4rem;
+        --font-size-4xl: 3rem;
+        --font-size-3xl: 2.5rem;
+    }
+
+    /* Container max-width */
+    .container {
+        max-width: 1400px;
+    }
+
+    /* Hero section */
+    .hero-title {
+        font-size: var(--font-size-5xl);
+    }
+
+    /* Section spacing */
+    .section {
+        padding: var(--space-4xl) 0;
+    }
+}
+
+/* ============================================
+   SMALL DESKTOP BREAKPOINT (1024px)
+   ============================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Container max-width */
+    .container {
+        max-width: 960px;
+    }
+
+    /* About section */
+    .about-content {
+        grid-template-columns: 1fr 1.2fr;
+        gap: var(--space-xl);
+    }
+
+    /* Skills section */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Projects section */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Education section */
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact section */
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   LANDSCAPE MOBILE (max-height)
+   ============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    /* Hero section for landscape mode */
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .hero-tagline {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--space-lg);
+    }
+
+    .hero-buttons {
+        gap: var(--space-sm);
+    }
+
+    .btn {
+        padding: var(--space-sm) var(--space-lg);
+    }
+
+    .scroll-indicator {
+        bottom: var(--space-lg);
+    }
+
+    /* Section spacing */
+    .section {
+        padding: var(--space-xl) 0;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    /* Hide non-essential elements */
+    .navbar,
+    .scroll-indicator,
+    .back-to-top,
+    .hero-canvas,
+    .contact-form {
+        display: none !important;
+    }
+
+    /* Reset colors for print */
+    body {
+        background: white;
+        color: black;
+    }
+
+    body::before {
+        display: none;
+    }
+
+    /* Ensure text is readable */
+    .section-title,
+    .hero-title,
+    .timeline-title,
+    .project-title,
+    .education-degree {
+        color: black;
+    }
+
+    /* Remove shadows and effects */
+    .skill-category,
+    .timeline-content,
+    .project-card,
+    .education-card,
+    .contact-info {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    /* Adjust spacing */
+    .section {
+        padding: var(--space-lg) 0;
+        page-break-inside: avoid;
+    }
+
+    /* Ensure links are visible */
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION PREFERENCE
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    /* Disable animations for users who prefer reduced motion */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    /* Disable scroll behavior */
+    html {
+        scroll-behavior: auto;
+    }
+
+    /* Disable reveal animations */
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-bottom,
+    .reveal-scale {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+    :root {
+        --bg-primary: #000000;
+        --bg-secondary: #111111;
+        --bg-card: #222222;
+        --text-primary: #ffffff;
+        --text-secondary: #e0e0e0;
+        --border-color: #ffffff;
+        --accent-primary: #00ffff;
+        --accent-secondary: #00ff00;
+    }
+
+    .skill-category,
+    .timeline-content,
+    .project-card,
+    .education-card,
+    .contact-info,
+    .contact-form {
+        border-width: 2px;
+    }
+}
+
+/* ============================================
+   DARK MODE SYSTEM PREFERENCE
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    /* Already using dark theme, but ensure consistency */
+    :root {
+        --bg-primary: #0d0f14;
+        --bg-secondary: #14161b;
+        --bg-card: #1a1d24;
+    }
+}
