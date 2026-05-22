@@ -24,13 +24,14 @@
             <a href="#hero" class="navbar-logo"> Med Wassim</a>
             
             <ul class="navbar-menu" id="navbar-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
             
+            <button class="lang-toggle" id="lang-toggle" title="Passer en Français">FR</button>
             <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -48,10 +49,10 @@
                 <span class="typing-text" id="typing-text"></span>
                 <span class="typing-cursor">|</span>
             </p>
-            <p class="hero-tagline">Turning raw data into strategic decisions.</p>
+            <p class="hero-tagline" data-i18n="hero.tagline">Turning raw data into strategic decisions.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="assets/images/cv.pdf" class="btn btn-secondary" download>Download CV</a>
+                <a href="#projects" class="btn btn-primary" data-i18n="hero.btn.projects">View Projects</a>
+                <a href="assets/images/cv.pdf" class="btn btn-secondary" download data-i18n="hero.btn.cv">Download CV</a>
             </div>
         </div>
         <a href="#about" class="scroll-indicator" aria-label="Scroll down">
@@ -64,7 +65,7 @@
     <!-- ==================== ABOUT SECTION ==================== -->
     <section class="section about" id="about">
         <div class="container">
-            <h2 class="section-title reveal">About Me</h2>
+            <h2 class="section-title reveal" data-i18n="about.title">About Me</h2>
             <div class="about-content">
                 <div class="about-image reveal">
                     <div class="image-frame">
@@ -72,7 +73,7 @@
                     </div>
                 </div>
                 <div class="about-text reveal">
-                    <p class="about-bio">
+                    <p class="about-bio" data-i18n="about.bio">
                         I'm a passionate BI & Data Analyst based in Nabeul, Tunisia, specializing in transforming complex data into actionable insights. With expertise in Power BI, ETL pipelines, and data engineering, I help businesses make data-driven decisions through interactive dashboards and automated analytics solutions.
                     </p>
                     <div class="about-details">
@@ -81,7 +82,7 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
-                            <span>Nabeul, Tunisia</span>
+                            <span data-i18n="about.location">Nabeul, Tunisia</span>
                         </div>
                         <div class="detail-item">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -90,25 +91,25 @@
                                 <line x1="8" y1="2" x2="8" y2="6"/>
                                 <line x1="3" y1="10" x2="21" y2="10"/>
                             </svg>
-                            <span>Open to opportunities</span>
+                            <span data-i18n="about.status">Open to opportunities</span>
                         </div>
                     </div>
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number">2</span>
-                            <span class="stat-label">Internships</span>
+                            <span class="stat-label" data-i18n="about.stat.internships">Internships</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">3</span>
-                            <span class="stat-label">Projects</span>
+                            <span class="stat-label" data-i18n="about.stat.projects">Projects</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">5+</span>
-                            <span class="stat-label">BI Tools</span>
+                            <span class="stat-label" data-i18n="about.stat.tools">BI Tools</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">3</span>
-                            <span class="stat-label">Languages</span>
+                            <span class="stat-label" data-i18n="about.stat.languages">Languages</span>
                         </div>
                     </div>
                 </div>
@@ -119,7 +120,7 @@
     <!-- ==================== SKILLS SECTION ==================== -->
     <section class="section skills" id="skills">
         <div class="container">
-            <h2 class="section-title reveal">Technical Skills</h2>
+            <h2 class="section-title reveal" data-i18n="skills.title">Technical Skills</h2>
             <div class="skills-grid">
                 <!-- Business Intelligence -->
                 <div class="skill-category reveal">
@@ -129,7 +130,7 @@
                             <line x1="8" y1="21" x2="16" y2="21"/>
                             <line x1="12" y1="17" x2="12" y2="21"/>
                         </svg>
-                        <h3>Business Intelligence</h3>
+                        <h3 data-i18n="skills.bi">Business Intelligence</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag" data-tooltip="Interactive dashboards and data visualization">Power BI</span>
@@ -145,7 +146,7 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                         </svg>
-                        <h3>Data Engineering & ETL</h3>
+                        <h3 data-i18n="skills.etl">Data Engineering & ETL</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag" data-tooltip="Microsoft ETL tool for data integration">SSIS</span>
@@ -163,7 +164,7 @@
                             <polyline points="16 18 22 12 16 6"/>
                             <polyline points="8 6 2 12 8 18"/>
                         </svg>
-                        <h3>Development</h3>
+                        <h3 data-i18n="skills.dev">Development</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag" data-tooltip="Data analysis and automation">Python</span>
@@ -181,7 +182,7 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
                         </svg>
-                        <h3>AI & LLM</h3>
+                        <h3 data-i18n="skills.ai">AI & LLM</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag" data-tooltip="Large Language Model APIs integration">LLM APIs</span>
@@ -199,7 +200,7 @@
                             <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
                         </svg>
-                        <h3>Databases</h3>
+                        <h3 data-i18n="skills.db">Databases</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag" data-tooltip="Microsoft database management system">SQL Server</span>
@@ -217,7 +218,7 @@
                             <rect x="14" y="14" width="7" height="7"/>
                             <rect x="3" y="14" width="7" height="7"/>
                         </svg>
-                        <h3>Data Modeling</h3>
+                        <h3 data-i18n="skills.modeling">Data Modeling</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag" data-tooltip="Centralized data storage architecture">Data Warehouse</span>
@@ -232,7 +233,7 @@
                             <circle cx="12" cy="12" r="3"/>
                             <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
                         </svg>
-                        <h3>Tools & Methods</h3>
+                        <h3 data-i18n="skills.tools">Tools & Methods</h3>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag" data-tooltip="Iterative project management methodology">Agile</span>
@@ -247,20 +248,20 @@
     <!-- ==================== EXPERIENCE SECTION ==================== -->
     <section class="section experience" id="experience">
         <div class="container">
-            <h2 class="section-title reveal">Experience</h2>
+            <h2 class="section-title reveal" data-i18n="exp.title">Experience</h2>
             <div class="timeline">
                 <!-- Experience Card 1 -->
                 <div class="timeline-item reveal">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">02/2026 – 06/2026</div>
-                        <h3 class="timeline-title">BI & AI Developer Intern</h3>
-                        <p class="timeline-company">B2M-IT</p>
+                        <div class="timeline-date" data-i18n="exp.1.date">02/2026 – 06/2026</div>
+                        <h3 class="timeline-title" data-i18n="exp.1.role">BI & AI Developer Intern</h3>
+                        <p class="timeline-company" data-i18n="exp.1.company">B2M-IT</p>
                         <ul class="timeline-description">
-                            <li>Built a BI chatbot for natural language data analysis</li>
-                            <li>Used AI models to automate analytical queries</li>
-                            <li>Created Power BI dashboards with multiple business KPIs</li>
-                            <li>Built a FastAPI backend with Streamlit + Power Apps interface</li>
+                            <li data-i18n="exp.1.desc1">Built a BI chatbot for natural language data analysis</li>
+                            <li data-i18n="exp.1.desc2">Used AI models to automate analytical queries</li>
+                            <li data-i18n="exp.1.desc3">Created Power BI dashboards with multiple business KPIs</li>
+                            <li data-i18n="exp.1.desc4">Built a FastAPI backend with Streamlit + Power Apps interface</li>
                         </ul>
                     </div>
                 </div>
@@ -269,14 +270,14 @@
                 <div class="timeline-item reveal">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">07/2025 – 08/2025</div>
-                        <h3 class="timeline-title">Data Engineering Intern</h3>
-                        <p class="timeline-company">B2M IT</p>
+                        <div class="timeline-date" data-i18n="exp.2.date">07/2025 – 08/2025</div>
+                        <h3 class="timeline-title" data-i18n="exp.2.role">Data Engineering Intern</h3>
+                        <p class="timeline-company" data-i18n="exp.2.company">B2M IT</p>
                         <ul class="timeline-description">
-                            <li>Designed ETL pipelines with SSIS and SQL Server</li>
-                            <li>Processed data from multiple sources</li>
-                            <li>Structured data for business intelligence use</li>
-                            <li>Automated analytical data flows</li>
+                            <li data-i18n="exp.2.desc1">Designed ETL pipelines with SSIS and SQL Server</li>
+                            <li data-i18n="exp.2.desc2">Processed data from multiple sources</li>
+                            <li data-i18n="exp.2.desc3">Structured data for business intelligence use</li>
+                            <li data-i18n="exp.2.desc4">Automated analytical data flows</li>
                         </ul>
                     </div>
                 </div>
@@ -287,7 +288,7 @@
     <!-- ==================== PROJECTS SECTION ==================== -->
     <section class="section projects" id="projects">
         <div class="container">
-            <h2 class="section-title reveal">Projects</h2>
+            <h2 class="section-title reveal" data-i18n="projects.title">Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card reveal">
@@ -298,8 +299,8 @@
                             <line x1="12" y1="22.08" x2="12" y2="12"/>
                         </svg>
                     </div>
-                    <h3 class="project-title">Enterprise Data Warehouse for BBT</h3>
-                    <p class="project-description">Built a Big Data warehouse using PySpark, Hadoop, SQL Server. Visualized insights via interactive Power BI dashboards.</p>
+                    <h3 class="project-title" data-i18n="projects.1.title">Enterprise Data Warehouse for BBT</h3>
+                    <p class="project-description" data-i18n="projects.1.desc">Built a Big Data warehouse using PySpark, Hadoop, SQL Server. Visualized insights via interactive Power BI dashboards.</p>
                     <div class="project-tags">
                         <span class="project-tag">PySpark</span>
                         <span class="project-tag">Hadoop</span>
@@ -319,8 +320,8 @@
                             <circle cx="18.5" cy="18.5" r="2.5"/>
                         </svg>
                     </div>
-                    <h3 class="project-title">NYC Yellow Taxi Trips Analysis</h3>
-                    <p class="project-description">Full BI solution on NYC taxi dataset. ETL with Talend Open Studio, star schema modeling. Power BI dashboards: peak hours, revenue, zones, payment methods.</p>
+                    <h3 class="project-title" data-i18n="projects.2.title">NYC Yellow Taxi Trips Analysis</h3>
+                    <p class="project-description" data-i18n="projects.2.desc">Full BI solution on NYC taxi dataset. ETL with Talend Open Studio, star schema modeling. Power BI dashboards: peak hours, revenue, zones, payment methods.</p>
                     <div class="project-tags">
                         <span class="project-tag">Talend</span>
                         <span class="project-tag">Power BI</span>
@@ -339,8 +340,8 @@
                             <line x1="6" y1="20" x2="6" y2="16"/>
                         </svg>
                     </div>
-                    <h3 class="project-title">Sales ETL Pipeline & Analysis</h3>
-                    <p class="project-description">Automated Python ETL pipeline for commercial data. KPIs: basket value, conversion rate, repurchase rate. Interactive visuals feeding an analytics dashboard.</p>
+                    <h3 class="project-title" data-i18n="projects.3.title">Sales ETL Pipeline & Analysis</h3>
+                    <p class="project-description" data-i18n="projects.3.desc">Automated Python ETL pipeline for commercial data. KPIs: basket value, conversion rate, repurchase rate. Interactive visuals feeding an analytics dashboard.</p>
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
                         <span class="project-tag">ETL</span>
@@ -356,7 +357,7 @@
     <!-- ==================== EDUCATION SECTION ==================== -->
     <section class="section education" id="education">
         <div class="container">
-            <h2 class="section-title reveal">Education</h2>
+            <h2 class="section-title reveal" data-i18n="edu.title">Education</h2>
             <div class="education-grid">
                 <!-- Education Card 1 -->
                 <div class="education-card reveal">
@@ -367,9 +368,9 @@
                         </svg>
                     </div>
                     <div class="education-content">
-                        <h3 class="education-degree">Master's - Information Systems & Knowledge Engineering</h3>
-                        <p class="education-institution">Faculté des Sciences Économiques et de Gestion de Nabeul</p>
-                        <p class="education-date">09/2024 – 10/2026</p>
+                        <h3 class="education-degree" data-i18n="edu.1.degree">Master's - Information Systems & Knowledge Engineering</h3>
+                        <p class="education-institution" data-i18n="edu.1.school">Faculté des Sciences Économiques et de Gestion de Nabeul</p>
+                        <p class="education-date" data-i18n="edu.1.date">09/2024 – 10/2026</p>
                     </div>
                 </div>
 
@@ -382,9 +383,9 @@
                         </svg>
                     </div>
                     <div class="education-content">
-                        <h3 class="education-degree">Bachelor in IT / DSI</h3>
-                        <p class="education-institution">Institut Supérieur des Études Technologiques de Kelibia</p>
-                        <p class="education-date">09/2021 – 07/2024</p>
+                        <h3 class="education-degree" data-i18n="edu.2.degree">Bachelor in IT / DSI</h3>
+                        <p class="education-institution" data-i18n="edu.2.school">Institut Supérieur des Études Technologiques de Kelibia</p>
+                        <p class="education-date" data-i18n="edu.2.date">09/2021 – 07/2024</p>
                     </div>
                 </div>
             </div>
@@ -394,10 +395,10 @@
     <!-- ==================== CONTACT SECTION ==================== -->
     <section class="section contact" id="contact">
         <div class="container">
-            <h2 class="section-title reveal">Get In Touch</h2>
+            <h2 class="section-title reveal" data-i18n="contact.title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info reveal">
-                    <h3>Contact Information</h3>
+                    <h3 data-i18n="contact.info.title">Contact Information</h3>
                     <div class="contact-item">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -443,21 +444,21 @@
                     </div>
                 </div>
                 <div class="contact-form reveal">
-                    <h3>Send a Message</h3>
+                    <h3 data-i18n="contact.form.title">Send a Message</h3>
                     <form id="contact-form">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name" data-i18n="contact.form.name">Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" data-i18n="contact.form.email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message" data-i18n="contact.form.message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.btn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -467,7 +468,7 @@
     <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Mohamed Wassim Garali — Built with passion & data</p>
+            <p data-i18n="footer.text">&copy; 2026 Mohamed Wassim Garali — Built with passion & data</p>
             <button class="back-to-top" id="back-to-top" aria-label="Back to top">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="18 15 12 9 6 15"/>
@@ -480,6 +481,7 @@
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/typing.js"></script>
     <script src="assets/js/animations.js"></script>
+    <script src="assets/js/lang.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
